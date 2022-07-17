@@ -208,15 +208,17 @@ body {
     }
 
     &__list {
+        display: flex;
+        flex-direction: row;
         max-height: 157px;
         height: 100%;
         width: 9996px;
-
-    display: flex;
-    flex-direction: row;
    }
 
     &__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         position: relative;
         width: $width-slider;
         height: $height-slider;
@@ -226,10 +228,6 @@ body {
         padding: 20px;        
         font-size: $fs-22px-14px;
         line-height: 28px;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     }
     
     &__item:last-child {

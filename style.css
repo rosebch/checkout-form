@@ -200,13 +200,16 @@ body {
   overflow: hidden;
 }
 .slider__list {
+  display: flex;
+  flex-direction: row;
   max-height: 157px;
   height: 100%;
   width: 9996px;
-  display: flex;
-  flex-direction: row;
 }
 .slider__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   position: relative;
   width: calc(300px + 187 * (100vw - 362px) / 1558);
   height: calc(114px + 38 * (100vw - 362px) / 1558);
@@ -216,9 +219,6 @@ body {
   padding: 20px;
   font-size: calc(14px + 8 * (100vw - 362px) / 1558);
   line-height: 28px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 .slider__item:last-child {
   margin-right: 0;
